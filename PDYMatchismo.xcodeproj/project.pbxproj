@@ -20,6 +20,8 @@
 		12C7EE872AF0E32E00CA3144 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EE862AF0E32E00CA3144 /* AppDelegate.m */; };
 		12C7EE8C2AF111EF00CA3144 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EE8B2AF111EF00CA3144 /* Card.m */; };
 		12C7EE902AF1133000CA3144 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EE8F2AF1133000CA3144 /* Deck.m */; };
+		12C7EE932AF115A400CA3144 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EE922AF115A400CA3144 /* PlayingCard.m */; };
+		12C7EE962AF1188000CA3144 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EE952AF1188000CA3144 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		12C7EE8B2AF111EF00CA3144 /* Card.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		12C7EE8E2AF1133000CA3144 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		12C7EE8F2AF1133000CA3144 /* Deck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		12C7EE912AF115A400CA3144 /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		12C7EE922AF115A400CA3144 /* PlayingCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		12C7EE942AF1188000CA3144 /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		12C7EE952AF1188000CA3144 /* PlayingCardDeck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,10 @@
 				12C7EE8B2AF111EF00CA3144 /* Card.m */,
 				12C7EE8E2AF1133000CA3144 /* Deck.h */,
 				12C7EE8F2AF1133000CA3144 /* Deck.m */,
+				12C7EE912AF115A400CA3144 /* PlayingCard.h */,
+				12C7EE922AF115A400CA3144 /* PlayingCard.m */,
+				12C7EE942AF1188000CA3144 /* PlayingCardDeck.h */,
+				12C7EE952AF1188000CA3144 /* PlayingCardDeck.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,11 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C7EE612AF0E21500CA3144 /* main.m in Sources */,
+				12C7EE962AF1188000CA3144 /* PlayingCardDeck.m in Sources */,
 				12C7EE902AF1133000CA3144 /* Deck.m in Sources */,
 				12C7EE532AF0E21400CA3144 /* ViewController.m in Sources */,
 				12C7EE502AF0E21400CA3144 /* SceneDelegate.m in Sources */,
 				12C7EE592AF0E21400CA3144 /* PDYMatchismo.xcdatamodeld in Sources */,
 				12C7EE872AF0E32E00CA3144 /* AppDelegate.m in Sources */,
+				12C7EE932AF115A400CA3144 /* PlayingCard.m in Sources */,
 				12C7EE8C2AF111EF00CA3144 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

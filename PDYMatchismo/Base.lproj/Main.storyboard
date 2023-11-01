@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="A♣︎" backgroundImage="cardfrount">
+                                <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -39,6 +39,7 @@
                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="cardButton" destination="Q3n-R0-AGA" id="BEN-JK-Lz7"/>
                         <outlet property="filpsLabel" destination="hOY-Mu-nZV" id="0Ve-Al-KQk"/>
                     </connections>
                 </viewController>
@@ -48,6 +49,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cardfrount" width="42.666667938232422" height="64"/>
+        <image name="cardback" width="42.666667938232422" height="64"/>
     </resources>
 </document>
