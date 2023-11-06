@@ -49,14 +49,65 @@
 }
 
 - (int)match:(NSArray *)otherCards{
+    /*
     int score = 0;
-    if([otherCards count] == 1){
+    
+    if([otherCards count] >= 1){
         PlayingCard *otherCard = [otherCards firstObject];
         if([self.suit isEqualToString:otherCard.suit]){
             score = 1;
         }else if(self.rank == otherCard.rank){
             score = 4;
         }
+    }
+    if([otherCards count] == 2){
+        PlayingCard *otherCard = otherCards[1];
+        if([self.suit isEqualToString:otherCard.suit]){
+            score = score == 1 ? score + 1 : 1;
+        }else if(self.rank == otherCard.rank){
+            score = score == 4 ? score + 4: 4;
+        }
+        
+        PlayingCard *card1 =otherCards[0];
+        int n = [card1 match:@[otherCard]];
+        score = score > n ? score :n;
+        
+    }
+    
+    unsigned long numOtherCards = [otherCards count];
+        if (numOtherCards) {
+            for (PlayingCard *card in otherCards) {
+                if([self.suit isEqualToString:card.suit]){
+                    score += 1;
+                }
+                else if(self.rank == card.rank){
+                    score += 4;
+                }
+            }
+        }
+        if (numOtherCards > 1) {
+            score += [[otherCards firstObject] match:
+                [otherCards subarrayWithRange:NSMakeRange(1, numOtherCards - 1)]];
+        }
+    return score;
+    */
+    int score = 0;
+    unsigned long numOtherCards = [otherCards count];
+    
+    if (numOtherCards) {
+        for (Card *card in otherCards) {
+            if ([card isKindOfClass:[PlayingCard class]]) {
+                PlayingCard *otherCard = (PlayingCard *)card;
+                if ([self.suit isEqualToString:otherCard.suit]) {
+                    score += 1;
+                } else if (self.rank == otherCard.rank) {
+                    score += 4;
+                }
+            }
+        }
+    }
+    if (numOtherCards > 1) {
+        score += [[otherCards firstObject] match:[otherCards subarrayWithRange:NSMakeRange(1, numOtherCards - 1)]];
     }
     return score;
 }

@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (Card *)cardAtIndex:(NSUInteger)index;
 
 @property (nonatomic,readonly)NSInteger score;
+@property (nonatomic) NSInteger matchType;
+@property (nonatomic, readonly) NSArray *lastChosenCards;
+@property (nonatomic, readonly) NSInteger lastScore;
 
 @end
 
