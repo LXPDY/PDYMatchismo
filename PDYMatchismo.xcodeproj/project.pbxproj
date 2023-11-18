@@ -23,6 +23,7 @@
 		12C7EE932AF115A400CA3144 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EE922AF115A400CA3144 /* PlayingCard.m */; };
 		12C7EE962AF1188000CA3144 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EE952AF1188000CA3144 /* PlayingCardDeck.m */; };
 		12C7EE992AF233D600CA3144 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EE982AF233D600CA3144 /* CardMatchingGame.m */; };
+		12D7FB782B083C9200E1E608 /* PlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D7FB772B083C9200E1E608 /* PlayingCardGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		12C7EE952AF1188000CA3144 /* PlayingCardDeck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 		12C7EE972AF233D600CA3144 /* CardMatchingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
 		12C7EE982AF233D600CA3144 /* CardMatchingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
+		12D7FB762B083C9200E1E608 /* PlayingCardGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardGameViewController.h; sourceTree = "<group>"; };
+		12D7FB772B083C9200E1E608 /* PlayingCardGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +124,11 @@
 		12C7EE4A2AF0E21400CA3144 /* PDYMatchismo */ = {
 			isa = PBXGroup;
 			children = (
-				12C7EE852AF0E32600CA3144 /* AppDelegate.h */,
-				12C7EE4E2AF0E21400CA3144 /* SceneDelegate.h */,
-				12C7EE512AF0E21400CA3144 /* ViewController.h */,
-				12C7EE862AF0E32E00CA3144 /* AppDelegate.m */,
+				12D7FB752B083B0300E1E608 /* Supporting files */,
 				12C7EE602AF0E21500CA3144 /* main.m */,
-				12C7EE4F2AF0E21400CA3144 /* SceneDelegate.m */,
+				12C7EE512AF0E21400CA3144 /* ViewController.h */,
+				12D7FB762B083C9200E1E608 /* PlayingCardGameViewController.h */,
+				12D7FB772B083C9200E1E608 /* PlayingCardGameViewController.m */,
 				12C7EE522AF0E21400CA3144 /* ViewController.m */,
 				12C7EE5F2AF0E21500CA3144 /* Info.plist */,
 				12C7EE5A2AF0E21500CA3144 /* Assets.xcassets */,
@@ -170,6 +172,17 @@
 				12C7EE982AF233D600CA3144 /* CardMatchingGame.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		12D7FB752B083B0300E1E608 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				12C7EE852AF0E32600CA3144 /* AppDelegate.h */,
+				12C7EE4E2AF0E21400CA3144 /* SceneDelegate.h */,
+				12C7EE862AF0E32E00CA3144 /* AppDelegate.m */,
+				12C7EE4F2AF0E21400CA3144 /* SceneDelegate.m */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +317,7 @@
 			files = (
 				12C7EE612AF0E21500CA3144 /* main.m in Sources */,
 				12C7EE962AF1188000CA3144 /* PlayingCardDeck.m in Sources */,
+				12D7FB782B083C9200E1E608 /* PlayingCardGameViewController.m in Sources */,
 				12C7EE992AF233D600CA3144 /* CardMatchingGame.m in Sources */,
 				12C7EE902AF1133000CA3144 /* Deck.m in Sources */,
 				12C7EE532AF0E21400CA3144 /* ViewController.m in Sources */,
@@ -485,6 +499,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8QS74P3JV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PDYMatchismo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -512,6 +527,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8QS74P3JV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PDYMatchismo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

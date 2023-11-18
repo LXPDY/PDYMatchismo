@@ -6,9 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Deck.h"
+//Abstract class
 @interface ViewController : UIViewController
-
-
+//for sub class
+- (Deck *)createDeck; //abstract
 @end
 

@@ -7,7 +7,6 @@
 
 #import "ViewController.h"
 #import "Deck.h"
-#import "playingCardDeck.h"
 #import "CardMatchingGame.h"
 @interface ViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
@@ -92,8 +91,9 @@
 
 
 
-- (Deck *)createDeck{
-    return [[PlayingCardDeck alloc]init];
+- (Deck *)createDeck    //abstract
+{
+    return nil;
 }
 
 - (void)viewDidLoad{
